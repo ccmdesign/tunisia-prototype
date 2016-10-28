@@ -63,7 +63,7 @@
   &__legend {
     margin: 0;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
     color: rgba(black, .5);
   }
@@ -78,7 +78,10 @@
   &--overall {
     height: 32px;
     padding-bottom: 54px;
-
+    
+    .bar__legend {
+      font-size: 1rem;
+    }
     
     .bar__value { 
       background-color: $blue; 
