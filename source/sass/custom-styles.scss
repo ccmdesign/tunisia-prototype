@@ -2,6 +2,8 @@ $main-color: #bd0000;
 $accent-color: orange;
 $green: green;
 $red: $main-color;
+$yellow: #ffa200;
+$blue: #004ea6;
 
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
@@ -42,4 +44,7 @@ $red: $main-color;
 @import "content-section";
 @import "landing-section";
 @import "ranking";
+@import "city-page";
+@import "cmo-graph";
+@import "evaluation-graph";
 @import "custom";
