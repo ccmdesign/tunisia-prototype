@@ -53,14 +53,25 @@
 }
 
 .main-search--ranking {
-  margin: 20px 0;
+  margin: 20px 0 80px;
+  position: relative;
 
   input { 
-    padding: 6px 15px !important; 
+    padding: 8px 15px !important; 
     font-size: 1.3rem;
   }
-  input[type='submit'] { 
-    font-size: 1.5rem; 
-    padding: 6px !important;
+  
+  &:after {
+    @extend .u-material-icons;
+    content: 'search';
+    color: rgba(black, .2);
+    position: absolute;
+    right: 0;
+    padding: 7px 10px;
   }
+
+  &:hover:after {
+    color: rgba(black, .6);
+  }
+
 }
