@@ -1,5 +1,7 @@
 $main-color: #bd0000;
 $accent-color: orange;
+$green: green;
+$red: $main-color;
 
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
@@ -39,4 +41,5 @@ $accent-color: orange;
 @import "footer";
 @import "content-section";
 @import "landing-section";
+@import "ranking";
 @import "custom";

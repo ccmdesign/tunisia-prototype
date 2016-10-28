@@ -1,0 +1,34 @@
+{% extends '_base.html' %}
+{% block content %}
+<div class="row align-center">
+  <div class="large-8 column">
+    <form action="#" class="main-search main-search--ranking">
+      <input type="text" placeholder="Search for your City"><input type="submit" value="search">
+    </form>
+  </div>
+  <div class="large-12 column">
+    <table class="ranking">
+      <thead>
+        <th class="ranking__position"># <span class="sort down"></span></th>
+        <th class="ranking__city">City <span class="sort down"></span></th>
+        <th class="ranking__cmo">CMO <span class="sort down"></span></th>
+        <th class="ranking__governance">Gouvernance <span class="sort down"></span></th>
+        <th class="ranking__gestion">Gestion <span class="sort down"></span></th>
+        <th class="ranking__perenity">Perenity <span class="sort down"></span></th>
+        <th class="ranking__score">Score <span class="sort down"></span></th>
+      </thead>
+      {% for i in cities %}
+        <tr>
+          <td class="ranking__position">{{i.position}}</td>
+          <td class="ranking__city">{{i.city}}</td>
+          <td class="ranking__cmo"><i class="material-icons cmo-{{ i.cmo }}"></i></td>
+          <td class="ranking__governance">{{i.gouvernance}}</td>
+          <td class="ranking__gestion">{{i.gestion}}</td>
+          <td class="ranking__perenity">{{i.perenity}}</td>
+          <td class="ranking__score">{{i.score}}</td>
+        </tr>
+      {% endfor %}
+    </table>    
+  </div>
+</div>
+{% endblock %}
