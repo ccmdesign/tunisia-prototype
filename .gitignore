@@ -1,0 +1,5 @@
+.DS_Store
+.publish/
+public/
+support/
+/node_modules
